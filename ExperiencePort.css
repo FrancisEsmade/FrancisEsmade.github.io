@@ -31,7 +31,6 @@ header:hover {
 	border-radius:30px;
 }
 
-
 a {
 	color: black;
 	text-decoration: none;
@@ -39,8 +38,6 @@ a {
 	padding: 10px;
 	transition: 0.3s;
 }
-
-
 
 a:link {
 	color: black;
@@ -63,15 +60,35 @@ a:active {
 a:focus {
 	color: red;
 }
+
 body {
-    background-image: url("it.jpg");
-    
-   
-    background-size: cover;      
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
-   
-    min-height: 100vh;
+	background-image: url("it.jpg");
+	background-size: cover;      
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+
+@media (max-width: 768px) {
+	header {
+		height: auto;
+	}
+	.Head {
+		padding: 20px 10px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	a {
+		margin: 8px;
+	}
+	.exp {
+		margin-top: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 85%;
+		height: auto;
+	}
 }
